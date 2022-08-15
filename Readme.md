@@ -13,3 +13,14 @@ Esse curso traz um estudo e implementação dos seguintes conceitos:
 * DDD - Domain Driven Design, _nesse caso, usamos apenas conceitos básicos do DDD, nada aprofundado_.
 * Clean Architecture.
 * Unity test - Com XUnit.
+
+Algumas das tecnologias adotadas:
+* ASP.NET MVC.
+* Entity framework Core (com Code First).
+* .NET Class Library.
+* C#.
+* XUnit
+* SQL Server.
+* Html
+* Js
+* Css
