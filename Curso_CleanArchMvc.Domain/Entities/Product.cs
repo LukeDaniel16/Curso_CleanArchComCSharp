@@ -17,7 +17,7 @@ namespace CleanArchMvc.Domain.Entities
         
         public Product(int id, string name, string description, decimal price, int stock, string imagePath)
         {
-            DomainExceptionValidation.When(id < 0, "Id inválido");
+            DomainExceptionValidation.When(id < 0, "Id inválido.");
             Id = id;
             ValidateDomain(name, description, price, stock, imagePath);
         }
@@ -30,9 +30,9 @@ namespace CleanArchMvc.Domain.Entities
 
         public void ValidateDomain(string name, string description, decimal price, int stock, string imagePath)
         {
-            DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Nome inválido, nome é obrigatório");
+            DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Nome inválido, nome é obrigatório.");
             DomainExceptionValidation.When(name.Length < 3, "O Nome passado é menor que 3 caracteres.");
-            DomainExceptionValidation.When(string.IsNullOrEmpty(description), "Descrição inválida, nome é obrigatório");
+            DomainExceptionValidation.When(string.IsNullOrEmpty(description), "Descrição inválida, nome é obrigatório.");
             DomainExceptionValidation.When(description.Length < 3, "A Descrição passado é menor que 5 caracteres.");
             DomainExceptionValidation.When(price < 0, "O preço passado é menor que 0.");
             DomainExceptionValidation.When(stock < 0, "O estoque passado é menor que 0.");

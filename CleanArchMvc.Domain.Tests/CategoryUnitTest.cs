@@ -48,7 +48,7 @@ namespace CleanArchMvc.Domain.Tests
         {
             Action action = () => new Category(1, null);
             action.Should()
-                .Throw<Validation.DomainExceptionValidation>();                ;
+                .Throw<Validation.DomainExceptionValidation>();
         }
     }
 }
