@@ -1,8 +1,8 @@
-﻿using Curso_CleanArchMvc.Domain.Entities;
+﻿using CleanArchMvc.Domain.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Curso_CleanArchMvc.Domain.Interfaces
+namespace CleanArchMvc.Domain.Interfaces
 {
     public interface IProductRepository
     {

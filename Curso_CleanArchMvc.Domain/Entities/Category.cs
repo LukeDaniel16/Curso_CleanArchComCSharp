@@ -1,7 +1,7 @@
-﻿using Curso_CleanArchMvc.Domain.Validation;
+﻿using CleanArchMvc.Domain.Validation;
 using System.Collections.Generic;
 
-namespace Curso_CleanArchMvc.Domain.Entities
+namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Category : Entity
     {        
@@ -14,7 +14,7 @@ namespace Curso_CleanArchMvc.Domain.Entities
 
         public Category(int id, string name)
         {
-            DomainExceptionValidation.When(id < 0, "Id inválido");
+            DomainExceptionValidation.When(id < 0, "Id inválido.");
             Id = id;
             ValidateDomain(name);
         }        
@@ -26,7 +26,7 @@ namespace Curso_CleanArchMvc.Domain.Entities
 
         private void ValidateDomain(string name)
         {
-            DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Nome inválido, nome é obrigatório");
+            DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Nome inválido, nome é obrigatório.");
             DomainExceptionValidation.When(name.Length < 3, "O Nome passado é menor que 3 caracteres.");
             Name = name;
         }

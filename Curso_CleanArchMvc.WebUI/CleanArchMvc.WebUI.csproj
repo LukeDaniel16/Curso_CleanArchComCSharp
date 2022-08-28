@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Curso_CleanArchMvc.Infra.IoC\Curso_CleanArchMvc.Infra.IoC.csproj" />
+    <ProjectReference Include="..\Curso_CleanArchMvc.Infra.IoC\CleanArchMvc.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

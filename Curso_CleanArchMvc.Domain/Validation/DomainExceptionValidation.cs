@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Curso_CleanArchMvc.Domain.Validation
+namespace CleanArchMvc.Domain.Validation
 {
     public class DomainExceptionValidation : Exception
     {
