@@ -42,5 +42,13 @@ namespace CleanArchMvc.Domain.Tests
                 .Throw<Validation.DomainExceptionValidation>()
                 .WithMessage("Nome inválido, nome é obrigatório.");
         }
+        
+        [Fact(DisplayName = "Create category with missing name")]
+        public void CreateCategory_WithNullName_ResultObjectInvalidState()
+        {
+            Action action = () => new Category(1, null);
+            action.Should()
+                .Throw<Validation.DomainExceptionValidation>();                ;
+        }
     }
 }
