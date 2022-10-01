@@ -36,7 +36,7 @@ namespace CleanArchMvc.Domain.Entities
             DomainExceptionValidation.When(description.Length < 3, "A Descrição passado é menor que 5 caracteres.");
             DomainExceptionValidation.When(price < 0, "O preço passado é menor que 0.");
             DomainExceptionValidation.When(stock < 0, "O estoque passado é menor que 0.");
-            DomainExceptionValidation.When(imagePath.Length > 250, "O link para a imagem passado é muito grande.");
+            DomainExceptionValidation.When(imagePath?.Length > 250, "O link para a imagem passado é muito grande.");
 
             Name = name;
             Description = description;
