@@ -28,11 +28,38 @@ namespace CleanArchMvc.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructureAPI(Configuration);
+
+            services.AddInfrastructureJWT(Configuration);
+
             services.AddControllers().AddNewtonsoftJson(x => 
             x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArchMvc.API", Version = "v1" });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme... You need input 'Bearer [token]'"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[]{}
+                    }                    
+                });
             });
         }
 
@@ -47,8 +74,10 @@ namespace CleanArchMvc.API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStatusCodePages();
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
