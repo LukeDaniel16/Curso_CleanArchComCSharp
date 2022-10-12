@@ -26,4 +26,4 @@ Algumas das tecnologias adotadas:
 * Js
 * Css
 
-#### Você pode encontrar alguns screenshoots do projeto nesta [pasta](/screenshoots)!
+#### Você pode encontrar alguns screenshoots do projeto nesta [pasta](/CleanArchMvc.Screenshoots)!
