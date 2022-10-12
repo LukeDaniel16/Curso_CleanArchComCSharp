@@ -18,7 +18,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{11A9437D-E73E-4976-8D3C-7560444905FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{11A9437D-E73E-4976-8D3C-7560444905FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.API", "CleanArchMvc.API\CleanArchMvc.API.csproj", "{D98B398B-B4FA-4300-B1AF-D52169228945}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchMvc.Screenshoots", "CleanArchMvc.Screenshoots", "{F81AC4B9-4D87-46DF-AEC0-3A9C9BCF81CC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\ApiScreenShoot.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\ApiScreenShoot.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\ApiScreenShootDeleteExample.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\ApiScreenShootDeleteExample.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\DbDataExample.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\DbDataExample.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\DbScreenshoot.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\DbScreenshoot.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\TestsUnitExample.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\TestsUnitExample.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample1.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample1.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample2.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootExample2.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootLoginIdentity.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootLoginIdentity.png
+		..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootRegisterIdentity.png = ..\..\..\Desktop\CleanArchMvc.Screenshoots\UiScreenshootRegisterIdentity.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +66,10 @@ Global
 		{11A9437D-E73E-4976-8D3C-7560444905FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11A9437D-E73E-4976-8D3C-7560444905FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11A9437D-E73E-4976-8D3C-7560444905FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98B398B-B4FA-4300-B1AF-D52169228945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98B398B-B4FA-4300-B1AF-D52169228945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98B398B-B4FA-4300-B1AF-D52169228945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98B398B-B4FA-4300-B1AF-D52169228945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
