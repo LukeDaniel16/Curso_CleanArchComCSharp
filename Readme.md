@@ -25,3 +25,5 @@ Algumas das tecnologias adotadas:
 * Html
 * Js
 * Css
+
+#### Você pode encontrar alguns screenshoots do projeto nesta [pasta](/screenshoots)!
